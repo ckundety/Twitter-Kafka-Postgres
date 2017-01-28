@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="HLSV1" packages="">
+  <Appenders>
+    <File name="MyLog" fileName="/opt/logs/twitterkafkapostgre.log">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </File>
+  </Appenders>
+  <Loggers>
+    <Root level="DEBUG">
+      <AppenderRef ref="MyLog"/>
+    </Root>
+  </Loggers>
+</Configuration>
